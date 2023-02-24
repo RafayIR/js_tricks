@@ -10,3 +10,11 @@ array1.map( (a1) => {
 })
 
 console.log(counter)
+
+
+let a = 0
+let c = 0
+c = a++ ? 10 : 100
+console.log('First',c)
+c = !a ? 10 : 100
+console.log('second' ,c)
