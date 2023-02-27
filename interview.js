@@ -44,6 +44,7 @@ for (let i = 0 ; i < 5 ; i++)
 function getArr() {
     let a = [1,2,3,4,5]
     let b = []
+//     expected OUTPUT [ [ 1, 2 ], [ 2, 3 ], [ 3, 4 ], [ 4, 5 ], [ 5 ] ]
     for (var i = 0 ; i < a.length  ; i++){
         b.push([a[i], a[i + 1]])
     }
