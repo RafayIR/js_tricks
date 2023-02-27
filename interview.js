@@ -39,3 +39,14 @@ for (let i = 0 ; i < 5 ; i++)
     for (let i = 0 ; i < 4 ; i++ )
         console.log('Hello' )
         console.log('world')
+
+
+function getArr() {
+    let a = [1,2,3,4,5]
+    let b = []
+    for (var i = 0 ; i < a.length  ; i++){
+        b.push([a[i], a[i + 1]])
+    }
+    console.log(b)
+}
+getArr()
