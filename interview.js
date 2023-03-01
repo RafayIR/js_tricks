@@ -90,3 +90,21 @@ var lengthOfLastWord = function(s) {
 
 let ss = 'this is a new game'
 lengthOfLastWord(ss)
+
+// LEETCODE ANAGRAM PROBLEM
+
+var isAnagram = function (s, t) {
+    a = s.split('').sort()
+    b = t.split('').sort()
+    if( a.length !== b.length ) {
+        return false
+    }
+    for(var i = 0 ; i < s.length ; i++)
+       if( a[i] !== b[i]){
+           return false
+       }
+    return console.log('is anagram')
+}
+let aa = 'var'
+let b = 'rav'
+isAnagram(aa, b)
