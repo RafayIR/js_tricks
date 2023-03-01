@@ -79,7 +79,8 @@ console.log(result)
 
 
 
-// find the length 0f last word in given 
+// LEETCODE FIND THE LENGTH OF LAST WORD IN GIVEN SENTENCE
+
 var lengthOfLastWord = function(s) {
   let result = s.trim().split(' ');
   a = result[result.length-1].length
