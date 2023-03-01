@@ -77,8 +77,9 @@ const target = 5
 const result = searchInsert(nums,target)
 console.log(result)
 
-// find the length 0f last word in given 
 
+
+// find the length 0f last word in given 
 var lengthOfLastWord = function(s) {
   let result = s.trim().split(' ');
   a = result[result.length-1].length
