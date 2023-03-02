@@ -78,7 +78,6 @@ const result = searchInsert(nums,target)
 console.log(result)
 
 
-
 // LEETCODE FIND THE LENGTH OF LAST WORD IN GIVEN SENTENCE
 
 var lengthOfLastWord = function(s) {
@@ -108,3 +107,17 @@ var isAnagram = function (s, t) {
 let aa = 'var'
 let b = 'rav'
 isAnagram(aa, b)
+
+
+// LEETCODE TO CHECK PANGRAM 
+
+var isPangram = function(sentence){
+    let alpha = 'abcdefghijklmnopqrstuvwxyz'.split('')
+    for (var i = 0 ; i < alpha.length ; i++){
+        if(sentence.indexOf(alpha[i]) === -1){
+            return console.log('is not pangram')
+        }
+    }
+    return console.log('is pangram')
+}
+isPangram('thequickbrownfoxjumpsoverthelazydog')
