@@ -121,3 +121,15 @@ var isPangram = function(sentence){
     return console.log('is pangram')
 }
 isPangram('thequickbrownfoxjumpsoverthelazydog')
+
+
+var mostWords = function(sentences) {
+    
+    let max = 0
+    
+    for (let sentences of sentences) {
+        let words = sentence.split(' ')
+        max = Math.max(max , words.length)
+    }
+    return max;
+}
