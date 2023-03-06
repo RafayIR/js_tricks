@@ -132,3 +132,18 @@ var mostWords = function(sentences) {
     }
     return max;
 }
+
+// REMOVE VOWEL FROM STRING
+
+function remVowel(str) {
+    let a1 = ['a' , 'e' , 'i' , 'o' , 'u']
+    let result = ''
+    for (let i = 0 ; i < a1.length ; i++) {
+        if ( !a1.includes(str[i])) {
+            result += str[i]
+        }
+    }       
+    return console.log(result)
+}
+let str = "Geeks for geek"
+remVowel(str)
