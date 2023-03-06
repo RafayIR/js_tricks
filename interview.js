@@ -122,11 +122,10 @@ var isPangram = function(sentence){
 }
 isPangram('thequickbrownfoxjumpsoverthelazydog')
 
+// function to Get maximum length of sentences
 
 var mostWords = function(sentences) {
-    
     let max = 0
-    
     for (let sentences of sentences) {
         let words = sentence.split(' ')
         max = Math.max(max , words.length)
