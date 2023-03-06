@@ -149,3 +149,18 @@ let str = "Geeks for geek"
 remVowel(str)
 
 // RETURN 1st REPEATING CHARACTER FOUND
+
+function repStr(str){
+    var a = str.split('') 
+    for (var i = 0 ; i < a.length ; i++) {
+        for (var j = i+1 ;  j < a.length ; j++) {
+            if (str[j] == str[i]) {
+                a = str[j]
+                return console.log(`repeating chracter '${a}'`)
+            }
+        }    
+    }
+    return console.log('string has no repeating chracter')
+}
+var a = 'heloe'
+repStr(a)
