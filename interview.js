@@ -147,3 +147,5 @@ function remVowel(str) {
 }
 let str = "Geeks for geek"
 remVowel(str)
+
+// RETURN 1st REPEATING CHARACTER FOUND
