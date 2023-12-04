@@ -164,3 +164,32 @@ function repStr(str){
 }
 var a = 'heloe'
 repStr(a)
+
+
+
+
+    // SORT AN ARRAY
+
+let a = [5, 2, 7, 1, 0]
+
+function BubbleSort (a) {
+    for (let i = 0 ; i < a.length -1 ; i ++) {
+        let swapped = false 
+        for (let j = 0 ; j < a.length -i -1 ; j++) {
+                if (a[j] > a[j + 1]){
+                    let temp = a[j]
+                    a[j] = a[j + 1]
+                    a[j + 1] = temp
+                    swapped = true
+            }
+        }   
+    }
+    return a
+}
+
+console.log('Before Sorting' , a)
+console.log('After Sorting' , BubbleSort(a))
+
+
+
+
