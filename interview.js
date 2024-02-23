@@ -190,6 +190,25 @@ function BubbleSort (a) {
 console.log('Before Sorting' , a)
 console.log('After Sorting' , BubbleSort(a))
 
+// sum of almost Infinite Number
+function sum(...args) {
+    return args.reduce ( (a,b) => a + b)
+}
+console.log(sum(1,2,3,4,5))
+
+
+// FindMaxNumber
+function findMaxNum(args) {
+    let maxNum = 0;
+    for (num of args) {
+        if( num > maxNum) {
+            maxNum = num
+        }
+    }
+    return maxNum;
+}
+console.log(findMaxNum([2,3,7,8,9,17]))
+
 
 
 
