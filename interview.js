@@ -1,3 +1,35 @@
+// CACHE FUNCTION
+function convertToFarhenheit(celsius) {
+    return (celsius * 9/5) + 32
+}
+function memoize(fn) {
+    const cache = {}
+    return function(...args) {
+        const key = args.toString()
+        if(cache[key]) {
+            console.log('cache')
+            return  cache[key]
+        }
+        const result = fn(...args)
+        cache[key] = result
+        console.log('not Cache')
+        return result
+    }
+}
+const memoizeConToFor = memoize(convertToFarhenheit)
+
+console.log(memoizeConToFor(30))
+console.log(memoizeConToFor(30))
+console.log(memoizeConToFor(35))
+console.log(memoizeConToFor(35))
+
+
+
+
+
+
+
+
 // ARRAY MANIPULATION
 let array1 = [1,2]
 let array2 = [1,2]
