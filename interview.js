@@ -1,3 +1,22 @@
+// PROMISE.all With PROGRESS
+const allWithProgress = (promises, onProgress) => {
+    let complete = 0;
+    return Promise.all(promises.map( promise => {
+        return promise.then((result) => {
+            complete++
+            const completePercentage = (complete / promises.length) * 100
+            onProgress(completePercentage.toFixed(2))
+            return result 
+        })
+    }))
+}
+const task = [
+    () => new Promise((resolve) => setTimeout(() => resolve("TASK 1"),1000)),
+    () => new Promise((resolve) => setTimeout(() => resolve("TASK 2"),10000)),
+    () => new Promise((resolve) => setTimeout(() => resolve("TASK 3"),4000)),
+]
+allWithProgress(task.map(t => t()), (progress) => console.log('Progress', progress)).then(console.log)
+
 // SET TIMEOUT ARGUMENTS
 function init() {
     // let channel = 'YT'
