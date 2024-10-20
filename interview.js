@@ -1,3 +1,14 @@
+// SET TIMEOUT ARGUMENTS
+function init() {
+    // let channel = 'YT'
+    function greet(name , ch) {
+        console.log(`Hey ${name}`)
+        console.log(`From ${ch}`)
+    }
+setTimeout(greet, 1000,"FM","YT")
+}
+init();
+
 // CACHE FUNCTION
 function convertToFarhenheit(celsius) {
     return (celsius * 9/5) + 32
